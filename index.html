@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>App Finanças</title>
+  </head>
+  <body>
+    <header>
+      <nav><h4 class="app-title">App de Finanças Pessoais</h4></nav>
+    </header>
+    <div class="container">
+      <div class="section-sidebar">
+        <form id="budget-form" class="budget-form">
+          <h4 id="budget-request">Orçamento Mensal</h4>
+          <input type="number" id="budget-input" class="budget-input" />
+          <button class="budget-submit" id="budget-submit">Adicionar</button>
+        </form>
+        <form id="expense-form" class="expense-form">
+          <h4 id="expense-name-title" class="expense-name-title">Novo gasto</h4>
+          <input
+            type="text"
+            id="expense-input"
+            class="expense-input"
+            placeholder="Nome do gasto"
+          />
+          <input
+            type="number"
+            id="amount-input"
+            class="expense-input"
+            placeholder="Valor do gasto"
+          />
+          <button type="submit" id="expense-submit" class="expense-submit">
+            Adicionar gasto
+          </button>
+        </form>
+      </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

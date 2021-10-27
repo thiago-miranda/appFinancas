@@ -1,0 +1,95 @@
+:root {
+  --mainWhite: #fff;
+  --mainDark: #222222;
+  --mainGreen: #35b158;
+  --mainRed: #df4c40;
+  --mainBlue: #323fbc;
+  --bgWhite: #f3f5f9;
+}
+
+body {
+  background: var(--mainWhite);
+  color: var(--mainDark);
+
+  margin: 0;
+  padding: 0;
+
+  font-size: 16px;
+  font-family: sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 0 5%;
+}
+
+header {
+  margin: 0 5%;
+}
+
+.app-title {
+  font-size: 1.2rem;
+}
+
+.section-sidebar {
+  background: var(--bgWhite);
+  display: flex;
+  flex-direction: column;
+  flex-basis: 40%;
+  flex: 1;
+  margin: 2%;
+  padding: 20px 15px;
+  height: 100%;
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -moz-appearance: textfield;
+}
+
+.budget-input,
+.expense-input {
+  background: rgba(51, 64, 189, 0.3);
+  border: 0;
+  border-radius: 3px;
+
+  padding: 8px 10px;
+  margin-right: 5px;
+}
+
+.budget-submit {
+  background: var(--mainBlue);
+  color: var(--bgWhite);
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 3px;
+}
+
+.budget-submit:hover,
+.expense-submit:hover {
+  font-size: 0.9rem;
+}
+
+.expense-input {
+  display: inline-block;
+}
+
+.expense-input::placeholder {
+  color: var(--mainRed);
+  font-weight: bold;
+}
+
+.expense-submit {
+  background: var(--mainRed);
+  color: var(--mainWhite);
+  padding: 8px 12px;
+  border: 0;
+  border-radius: 3px;
+}
+
+.expense-name-title {
+  color: var(--mainRed);
+}
