@@ -13,6 +13,10 @@
     </header>
     <div class="container">
       <div class="section-sidebar">
+        <div
+          class="budget-feedback expense-NameFeedback expense-valueFeedback"
+        ></div>
+
         <form id="budget-form" class="budget-form">
           <h4 id="budget-request">Orçamento Mensal</h4>
           <input type="number" id="budget-input" class="budget-input" />
@@ -41,27 +45,31 @@
         <div class="section-stats">
           <div class="info-stats">
             <h4 class="info-title" id="budget-title">Orçamento</h4>
-            <h3 class="budget" id="budget">R$ <span id="budget-amount">0</span></h3>
+            <h3 class="budget" id="budget">
+              R$ <span id="budget-amount">0</span>
+            </h3>
           </div>
           <div class="info-stats">
             <h4 class="info-title" id="expense-title">Gastos</h4>
-            <h3 class="expense" id="expense">R$ <span id="expense-amount">0</span></h3>
+            <h3 class="expense" id="expense">
+              R$ <span id="expense-amount">0</span>
+            </h3>
           </div>
           <div class="info-stats">
             <h4 class="info-title" id="balance-title">Balança</h4>
-            <h3 class="balance" id="balance">R$ <span id="balance-amount">0</span></h3>
+            <h3 class="balance" id="balance">
+              R$ <span id="balance-amount">0</span>
+            </h3>
           </div>
         </div>
-        
+
         <div class="section-table">
           <div class="expense-list-titles">
             <h4 class="list-info">Titulo do Gasto</h4>
             <h4 class="list-info">Valor do Gasto</h4>
             <h4 class="list-info">Açoes</h4>
           </div>
-          <div class="expense-list" id="expense-list">
-           
-          </div>
+          <div class="expense-list" id="expense-list"></div>
         </div>
       </div>
     </div>

@@ -44,6 +44,11 @@ header {
   padding: 20px 15px;
   height: 100%;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
 
 input[type="number"] {
   appearance: textfield;
@@ -93,6 +98,16 @@ input[type="number"] {
 
 .expense-name-title {
   color: var(--mainRed);
+}
+
+.budget-feedback p {
+  font-size: 14px;
+  color: var(--mainRed);
+}
+
+.showItem {
+  display: block;
+  font-weight: bold;
 }
 
 /* Secao Principal  */
@@ -155,14 +170,36 @@ input[type="number"] {
   text-align: center;
 }
 
-.expense-list {
+.expense {
   display: flex;
+  flex-basis: 30%;
   flex-direction: row;
   justify-content: center;
+  align-items: center;
 }
 
 .list-item {
   flex: 1;
   flex-direction: row;
   text-align: center;
+}
+
+.edit-icon,
+.delete-icon {
+  color: var(--mainGreen);
+  cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.edit-icon:hover,
+.delete-icon:hover {
+  opacity: 0.8;
+}
+
+.showRed {
+  color: var(--mainRed);
+}
+.showGreen {
+  color: var(--mainGreen);
 }
